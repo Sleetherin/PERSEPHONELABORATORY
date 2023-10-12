@@ -8,10 +8,7 @@ window.addEventListener('DOMContentLoaded', function(){
    canvas.width = window.innerWidth;
    canvas.height = window.innerHeight;
 
-    window.addEventListener('resize', ()=>{
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
+    
 
     let lastTime = 0;
     const game = new RoomManager(canvas.width, canvas.height,ctx);

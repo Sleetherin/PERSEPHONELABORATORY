@@ -17,7 +17,7 @@ export class Player{
       this.frameInterval = 1000/this.fps;
       this.frameTimer = 0;
       this.state = 'entrance';
-      this.strike_idle_image = document.getElementById('strike_idle');
+  
     }
     
     setSpeed(speedX,speedY){
@@ -367,9 +367,7 @@ export class Player{
 
     draw(context)
     {  
-      context.drawImage(this.strike_idle_image, this.frameX * this.width, this.frameY * this.height, this.width, 
-      this.height, this.x, this.y, this.width, this.height);
-      context.fillStyle = 'white';
-      context.strokeRect(this.x, this.y, this.width, this.height);
+      context.fillStyle = 'black';
+      context.fillRect(this.x, this.y, this.width, this.height);
     }
 }
